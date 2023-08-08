@@ -1,0 +1,17 @@
+@use '/src/variables.scss';
+
+.nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: variables.$lightest-blue;
+    line-height: 26px;
+
+    .back, .next{
+        &:hover{
+            cursor: pointer;
+            text-underline-offset: 3px;
+            text-decoration: underline;
+        }
+    }
+}

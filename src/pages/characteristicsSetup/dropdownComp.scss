@@ -1,0 +1,61 @@
+@use '/src/variables.scss';
+
+.dropdown-wrapper {
+    max-width: 218px;
+    background-color: variables.$darker-blue;
+
+    .element {
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        display: flex;
+        height: 46px;
+        color: white;
+        text-align: center;
+        justify-content: center;
+    }
+
+    p {
+
+        margin: auto;
+    }
+
+    .new {
+        border-bottom: 1px variables.$lightest-blue solid;
+    }
+
+    .children.show {
+        //  max-height: 500px;
+    }
+
+    .children {
+        //  max-height: 0;
+        overflow: hidden;
+        // transition: max-height 0.90s ease;
+
+        :not(:first-child) {
+            border-top: 1px variables.$lightest-blue solid;
+        }
+    }
+
+    .dropdown {
+        box-shadow: 0px 8px 8px 0px #00000040;
+    }
+
+    .icon {
+        position: absolute;
+        align-self: center;
+        height: 24px;
+
+        &.right {
+            margin-right: 170px;
+        }
+
+        &.left {
+            margin-left: 170px;
+        }
+    }
+}

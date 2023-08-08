@@ -1,0 +1,22 @@
+@use '/src/variables.scss';
+
+button {
+    height: 113px;
+    width: 266px;
+    background-color: variables.$main-blue;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: Inter;
+    letter-spacing:1px;
+
+   
+
+    &:hover{
+       border: variables.$lightest-blue 5px solid;
+    transition: border-width 0.15s linear;
+        cursor: pointer;
+    }
+}

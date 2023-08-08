@@ -1,0 +1,22 @@
+@use '/src/variables.scss';
+
+.access-config{
+  
+    .main-text {
+            max-width: 541px;
+            margin: auto;
+        }
+        .navigation {
+            margin-top: 113px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            @media (max-width: variables.$breakpoint-small) {
+                margin-top: 50px;
+                flex-direction: column;
+                button{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+}

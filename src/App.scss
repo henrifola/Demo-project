@@ -1,0 +1,28 @@
+@use '/src/variables.scss';
+
+.App {
+  font-family: Inter;
+
+  @media (max-width: variables.$breakpoint-small) {
+      margin: 10px;
+    }
+    
+    .header{
+      height: 150px;
+      background-color: grey;
+      margin-bottom: 100px;
+    }
+}
+h1{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48.41px;
+  text-align: center;
+}
+.text{
+  font-weight: 300;
+  font-size: 16px;
+  font-family: Inter;
+  text-align: center;
+  line-height: 26px;
+}
